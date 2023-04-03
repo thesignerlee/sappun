@@ -135,4 +135,66 @@ header .btm .nav > ul > li .sub li { /* a:e */ }
 header .btm .nav > ul > li .sub li a {
   padding: 10px;
   display: block;
+}
+
+main #right_popup {
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  background: yellow;
+  right: 100px;
+  top: 200px;
+}
+main #right_popup #popup_btn {
+  background: #fff;
+  width: 30px;
+}
+main #right_popup #popup_btn a {
+  display: block;
+  border: 1px solid #000;
+  position: relative;
+  left: 0;
+  top: 300px;
+}
+main #right_popup #popup_btn a img {
+  width: 100%;
+}
+main #right_popup #popup_btn a:first-child {
+  background: #ff7f50;
+  padding: 10px;
+}
+main #right_popup .contents {
+  background: #fff;
+  width: 500px;
+  margin: 30px auto;
+}
+main #right_popup .contents .info {
+  text-align: center;
+}
+main #right_popup .contents .info_contents {
+  text-align: center;
+  margin: 30px auto;
+}
+main #right_popup .contents .user {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+main #right_popup .contents .board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 30px auto;
+}
+main #right_popup .contents h2 {
+  margin: 15px auto;
+}
+main #right_popup .contents address {
+  margin: 15px auto;
+}
+main #right_popup .contents address + p {
+  line-height: 1.5;
+}
+main .visual img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
