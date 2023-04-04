@@ -141,32 +141,48 @@ main #right_popup {
   position: fixed;
   display: flex;
   flex-flow: row nowrap;
-  background: yellow;
-  right: 100px;
-  top: 200px;
+  right: 0px;
+  top: 0px;
 }
 main #right_popup #popup_btn {
-  background: #fff;
   width: 30px;
 }
 main #right_popup #popup_btn a {
   display: block;
-  border: 1px solid #000;
+  border-bottom: 1px solid #aaa;
+  background: #fff;
   position: relative;
-  left: 0;
-  top: 300px;
+  left: right;
+  top: 500px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
 }
-main #right_popup #popup_btn a img {
-  width: 100%;
+main #right_popup #popup_btn a img:nth-child(1) {
+  width: 20%;
 }
 main #right_popup #popup_btn a:first-child {
   background: #ff7f50;
-  padding: 10px;
+}
+main #right_popup #popup_btn a:nth-child(2) img {
+  width: 70%;
+}
+main #right_popup #popup_btn a:nth-child(3) img {
+  width: 70%;
+}
+main #right_popup #popup_btn a:nth-child(4) img {
+  width: 30%;
+}
+main #right_popup #popup_btn a:nth-child(5) img {
+  width: 30%;
 }
 main #right_popup .contents {
+  border: 1px solid #222;
+  height: 100vh;
   background: #fff;
   width: 500px;
-  margin: 30px auto;
+  padding: 20px;
 }
 main #right_popup .contents .info {
   text-align: center;
@@ -174,11 +190,30 @@ main #right_popup .contents .info {
 main #right_popup .contents .info_contents {
   text-align: center;
   margin: 30px auto;
+  line-height: 1.5;
+  color: #aaa;
+  font-weight: 600;
 }
 main #right_popup .contents .user {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+}
+main #right_popup .contents .user a {
+  font-weight: 600;
+  margin-top: 7px;
+}
+main #right_popup .contents .user a span {
+  color: #ff7f50;
+  font-weight: 600;
+}
+main #right_popup .contents .user a::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 1px;
+  margin-top: 7px;
+  background-color: #222;
 }
 main #right_popup .contents .board {
   display: grid;
@@ -186,14 +221,34 @@ main #right_popup .contents .board {
   grid-template-rows: repeat(4, 1fr);
   margin: 30px auto;
 }
+main #right_popup .contents .board a {
+  padding-bottom: 5px;
+  font-weight: 600;
+  margin-top: 7px;
+}
+main #right_popup .contents .board a::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 1px;
+  margin-top: 7px;
+  background-color: #222;
+}
 main #right_popup .contents h2 {
   margin: 15px auto;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+main #right_popup .contents h2 + p img {
+  width: 40%;
 }
 main #right_popup .contents address {
   margin: 15px auto;
+  font-size: 2.5rem;
 }
 main #right_popup .contents address + p {
   line-height: 1.5;
+  font-weight: 800;
 }
 main .visual img {
   width: 100%;

@@ -12,6 +12,15 @@ const nav_acc_sub = document.querySelectorAll('.nav > ul > li > .sub')
 console.log(kr_lnb, kr_lnb_open)
 console.log(all_nav, all_nav_open, all_nav_close)
 console.log(nav_acc, nav_acc_sub)
+//4. main - right_popup===========
+const rightpop = document.querySelector('main #right_popup')
+const popup = document.querySelector('main #right_popup #popup_btn a:first-child')
+const contents = document.querySelector('main #right_popup .contents')
+console.log(popup,contents)
+//1. right 500 숨기기
+rightpop.style.transform = 'translateX(500px)'
+//2. pop_btn 클릭 -> right 보이기
+
 //------------------------------event
 //1. 이벤트 실행 전 모두 숨기기
 //객체.속성.속성 = 값
@@ -43,4 +52,13 @@ kr_lnb.addEventListener('mouseover', function(){
 //7. 메뉴에 마우스 나갈 시 서브 메뉴 숨기기
 kr_lnb.addEventListener('mouseout', function(){
     kr_lnb_open.style.display='none'
+})
+//8. 메뉴에 클릭 시 전체 메뉴 숨기기
+popup.addEventListener('click', function(){
+    rightpop.style.transition = 'all 0.5s'
+    rightpop.style.transform = 'translateX(0)'
+})
+popup.addEventListener('mousedown', function(){
+    rightpop.style.transition = 'all 0.5s'
+    rightpop.style.transform = 'translateX(500px)'
 })

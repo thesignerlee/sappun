@@ -112,31 +112,65 @@ main {
         position:fixed;
         display: flex;
         flex-flow: row nowrap;
-        background: yellow; right:100px; top:200px;
+        right:0px; top:0px;
+    // #right_popup { position:fixed; right:0; top:0;
+    //     display:flex; align-items:center;
         #popup_btn {
-            background: #fff; width:30px;
+            width:30px;
+            //background:#fff; width:30px;
+            //border:1px solid $fontColor2;
+            //display:flex; flex-flow:column;
             a { display: block;
-                border: 1px solid #000;
-                position:relative; left:0; top:300px;
-                img {width:100%;}
+                border-bottom: 1px solid $fontColor2;
+                background: $wh;
+                position:relative; left:right; top:500px;
+                text-align: center;
+                width:30px;
+                height:30px;
+                line-height: 30px;
+                img:nth-child(1) {
+                    width:20%;
+                }
             }
-            a:first-child {background:$border; padding:10px;}
+            a:first-child {background:$border;}
+            a:nth-child(2) img {width:70%;}
+            a:nth-child(3) img {width:70%;}
+            a:nth-child(4) img {width:30%;}
+            a:nth-child(5) img {width:30%;}
         }
-        .contents {
-            background:#fff; width:500px;
-            margin: 30px auto;
-            .info {            text-align: center;
+        .contents { border: 1px solid $fontColor;
+            height:100vh;
+            background:$wh; width:500px;
+            padding: 20px;
+            //background:#fff; width:500px; height:100vh;
+            //border:1px solid $fontColor2; padding:30px;
+            .info {   text-align: center;
                 img{}}
             .info_contents {
                 text-align: center;
                 margin: 30px auto;
+                line-height: 1.5;
+                color:$fontColor2;
+                font-weight: 600;
             }
             .user {
                 display:grid;
                 grid-template-columns: repeat(2,1fr);
                 grid-template-rows: repeat(2,1fr);
-                
-                a{span{}}
+                //display:flex;
+                //flex-flow:row wrap;
+                a{font-weight: 600;
+                    //width:50%; border-bottom:1px solid $fontColor2;
+                    //text-transform:uppercase; padding:10px 5px;
+                    margin-top: 7px;
+                    
+                    
+                    span{ color: $border;
+                        font-weight: 600;
+                        
+                    }}
+                a::after {content: ''; display: block; width: 200px; height:1px; margin-top: 7px;
+                background-color: $fontColor;}
             
             }
             .board {
@@ -144,11 +178,16 @@ main {
                 grid-template-columns: repeat(2,1fr);
                 grid-template-rows: repeat(4,1fr);
                 margin: 30px auto;
-                a{}}
-            h2 {margin: 15px auto;}
-            h2+p {img{}}
-            address {margin: 15px auto;}
-            address+p {line-height: 1.5;}
+                a{
+                    padding-bottom: 5px; font-weight: 600; margin-top: 7px;
+                }
+                a::after {content: ''; display: block; width: 200px; height:1px; margin-top: 7px;
+                    background-color: $fontColor;}}
+            h2 {margin: 15px auto; font-weight: 800; font-size: 1.1rem;}
+            h2+p {img{width:40%;}}
+            address {margin: 15px auto; font-size:2.5rem;}
+            address+p {line-height: 1.5; font-weight: 800;}
+            
         }
     }//#right_popup end
     .visual {img{width:100%;}}
