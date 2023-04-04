@@ -155,8 +155,6 @@ main #right_popup #popup_btn a {
   left: right;
   top: 500px;
   text-align: center;
-  width: 30px;
-  height: 30px;
   line-height: 30px;
 }
 main #right_popup #popup_btn a img:nth-child(1) {
