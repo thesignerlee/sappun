@@ -192,15 +192,16 @@ main {
     .campaign1 { display:grid;
         grid-template-columns: repeat(3,22%);
         justify-content: center;
+        /* width: 1200px;
+        display:grid; grid-template-columns:repeat(3, 33%);
+        justify-content:space-between; padding:100px 0; */
         p { margin: 75px 10px;
             a {width:33%;
                 img {width:100%;
-
                 }
             }
         }
         p:last-child {
-
         }
     }
     .week {text-align: center; margin: 0px 0 75px 0; font-weight: 800;}

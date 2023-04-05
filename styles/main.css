@@ -255,6 +255,9 @@ main .campaign1 {
   display: grid;
   grid-template-columns: repeat(3, 22%);
   justify-content: center;
+  /* width: 1200px;
+  display:grid; grid-template-columns:repeat(3, 33%);
+  justify-content:space-between; padding:100px 0; */
 }
 main .campaign1 p {
   margin: 75px 10px;
