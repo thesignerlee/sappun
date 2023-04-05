@@ -263,20 +263,27 @@ main {
     .campaign3 {  background: url(../images/made_img.jpg); padding-bottom: 300px; position: relative;
         background-position: center;
         margin-bottom: 100px;
+        /* background:url() centerl
+        background-size:cover; padding:50px 0; text-align:center; */
         .cam3 { position: absolute; left: 700px; top: 100px; text-align: center;
-            h1 {font-size: 3rem; font-weight: 800; color: $wh;}
+            h1 {font-size: 3rem; font-weight: 800; color: $wh;
+            /* color:$wh; font-size:3rem; text-transform:uppercase; padding: 0 0 20px; */}
             p {margin-top: 30px;
-                a {color: $wh; border: $wh 1px solid; padding: 15px; font-weight: 600;}
+                a {color: $wh; border: $wh 1px solid; padding: 15px; font-weight: 600;
+                /* color:$wh; display:inline-block; border:2px solid $wh; padding: 15px 20px */
+                }
             }
         }
     }
 }//main end
 footer { border-top: 1px $fontColor solid;
     padding: 50px 250px; 
+    /* padding: 50px 0; border-top:1px solid $fontcolor2; margin:50px 0 0;*/
     .ft_t {
         display: flex;
         flex-flow: row nowrap;
         justify-content: start;
+        /* width:1200px; */
         p { margin-right: 15px;
             a {font-size: 0.8rem;}
         }

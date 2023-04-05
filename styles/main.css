@@ -345,6 +345,8 @@ main .campaign3 {
   position: relative;
   background-position: center;
   margin-bottom: 100px;
+  /* background:url() centerl
+  background-size:cover; padding:50px 0; text-align:center; */
 }
 main .campaign3 .cam3 {
   position: absolute;
@@ -356,6 +358,7 @@ main .campaign3 .cam3 h1 {
   font-size: 3rem;
   font-weight: 800;
   color: #fff;
+  /* color:$wh; font-size:3rem; text-transform:uppercase; padding: 0 0 20px; */
 }
 main .campaign3 .cam3 p {
   margin-top: 30px;
@@ -365,16 +368,19 @@ main .campaign3 .cam3 p a {
   border: #fff 1px solid;
   padding: 15px;
   font-weight: 600;
+  /* color:$wh; display:inline-block; border:2px solid $wh; padding: 15px 20px */
 }
 
 footer {
   border-top: 1px #222 solid;
   padding: 50px 250px;
+  /* padding: 50px 0; border-top:1px solid $fontcolor2; margin:50px 0 0;*/
 }
 footer .ft_t {
   display: flex;
   flex-flow: row nowrap;
   justify-content: start;
+  /* width:1200px; */
 }
 footer .ft_t p {
   margin-right: 15px;
