@@ -240,8 +240,8 @@ main {
                     }
                 }
                 p:nth-child(2) {
-                    span:first-child {background-color: #ffe4c4; color:$wh; margin-right: 5px; padding:3px;}
-                    span:last-child {background-color: #000080; color:$wh; padding: 3px;}
+                    span:first-child {background-color: $bestColor; color:$wh; margin-right: 5px; padding:3px;}
+                    span:last-child {background-color: $orderColor; color:$wh; padding: 3px;}
                     
                 }
                 p {
