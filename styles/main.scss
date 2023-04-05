@@ -204,16 +204,22 @@ main {
         p:last-child {
         }
     }
-    .week {text-align: center; margin: 0px 0 75px 0; font-weight: 800;}
+    .week {text-align: center; margin: 0px 0 75px 0; font-weight: 800;
+    /* font-weight:600; text-align:center; padding: 0 0 50px; text-transform: uppercase; */}
     .campaign2 {
         display:grid;
         grid-template-columns:repeat(3,22%);
         grid-template-rows: repeat(2,1fr);
         justify-content: center;
+        /* width:1200px;
+        padding: 0 0 100px; */
         .menu {margin: 3px 15px 75px 0;
-            .m_t {
+            /* display:grid; grid-template-columns:repeat(3,33%);
+            justify-content:space-between; */
+            .m_t { /* padding:0 0 50px; */
                 p {
-                    a {
+                    
+                    a { /* display:grid; grid- */
                         img {width:100%;}
                     }
                 }
