@@ -250,4 +250,143 @@ main #right_popup .contents address + p {
 }
 main .visual img {
   width: 100%;
+}
+main .campaign1 {
+  display: grid;
+  grid-template-columns: repeat(3, 22%);
+  justify-content: center;
+}
+main .campaign1 p {
+  margin: 75px 10px;
+}
+main .campaign1 p a {
+  width: 33%;
+}
+main .campaign1 p a img {
+  width: 100%;
+}
+main .week {
+  text-align: center;
+  margin: 0px 0 75px 0;
+  font-weight: 800;
+}
+main .campaign2 {
+  display: grid;
+  grid-template-columns: repeat(3, 22%);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+}
+main .campaign2 .menu {
+  margin: 3px 15px 75px 0;
+}
+main .campaign2 .menu .m_t p a img {
+  width: 100%;
+}
+main .campaign2 .menu .m_t h1 {
+  margin: 10px 0;
+  font-size: 0.8rem;
+}
+main .campaign2 .menu .m_t h2 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #222;
+}
+main .campaign2 .menu .m_t h2 span {
+  font-weight: 800;
+}
+main .campaign2 .menu .m_btm {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+main .campaign2 .menu .m_btm p:nth-child(1) {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+main .campaign2 .menu .m_btm p:nth-child(1) span:first-child {
+  font-weight: 800;
+}
+main .campaign2 .menu .m_btm p:nth-child(1) span:last-child {
+  color: #ff7f50;
+}
+main .campaign2 .menu .m_btm p:nth-child(2) span:first-child {
+  background-color: #ffe4c4;
+  color: #fff;
+  margin-right: 5px;
+  padding: 3px;
+}
+main .campaign2 .menu .m_btm p:nth-child(2) span:last-child {
+  background-color: #000080;
+  color: #fff;
+  padding: 3px;
+}
+main .campaign2 .menu .m_btm p span {
+  font-size: 0.7rem;
+}
+main .campaign3 {
+  background: url(../images/made_img.jpg);
+  height: 300px;
+  position: relative;
+  background-position: center;
+  margin-bottom: 100px;
+}
+main .campaign3 .cam3 {
+  position: absolute;
+  left: 700px;
+  top: 100px;
+  text-align: center;
+}
+main .campaign3 .cam3 h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+}
+main .campaign3 .cam3 p {
+  margin-top: 30px;
+}
+main .campaign3 .cam3 p a {
+  color: #fff;
+  border: #fff 1px solid;
+  padding: 15px;
+  font-weight: 600;
+}
+
+footer {
+  border-top: 1px #222 solid;
+  padding: 50px 250px;
+}
+footer .ft_t {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+}
+footer .ft_t p {
+  margin-right: 15px;
+}
+footer .ft_t p a {
+  font-size: 0.8rem;
+}
+footer .ft_t p:nth-child(1) a {
+  color: #aaa;
+}
+footer .ft_t p:nth-child(3) a {
+  color: #aaa;
+}
+footer .ft_t p:last-child {
+  margin: 0;
+}
+footer .ft_t p:last-child a {
+  color: #aaa;
+}
+footer .ft_btm {
+  margin-top: 20px;
+}
+footer .ft_btm address {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+footer .ft_btm p {
+  font-size: 0.8rem;
+  margin-top: 5px;
 }/*# sourceMappingURL=main.css.map */
