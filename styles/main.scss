@@ -232,10 +232,14 @@ main {
                 }
             }
             .m_btm {
+                /* display:grid;
+                gird-template-areas:
+                'size review'
+                'icon icon' */
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: space-between;
-                p:nth-child(1) {
+                p:nth-child(1) {/* grid:'size' */
                     display:flex;
                     flex-flow:row nowrap;
                     justify-content: space-between;
@@ -245,7 +249,7 @@ main {
                         color: #ff7f50;
                     }
                 }
-                p:nth-child(2) {
+                p:nth-child(2) { /* grid:'review' */
                     span:first-child {background-color: $bestColor; color:$wh; margin-right: 5px; padding:3px;}
                     span:last-child {background-color: $orderColor; color:$wh; padding: 3px;}
                     
