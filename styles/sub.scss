@@ -1,0 +1,89 @@
+main {
+    .container {
+        img {}
+        h2 {}
+        .request {
+            .menu {
+                .m_t {
+                    p {
+                        a {
+                            img {}
+                        }
+                    }
+                    h1 {}
+                    h2 {
+                        span {}
+                    }
+                }
+            }
+        }
+    }
+    .info {
+        .but {
+            button {}
+            button:nth-child(1) {}
+            button:nth-child(2) {}
+            button:nth-child(3) {}
+        }
+        img {}
+    }
+    aside {
+        .top {
+            p {
+                a {
+                    img {}
+                }
+            }
+            h1 {}
+            dl {
+                dt {}
+                dd {}
+            }
+        }
+        .optc {
+            .opt {
+                h2 {}
+                #select {
+                    option {}
+                }
+            }
+        }
+        .order {
+            .price {
+                p {}
+                p:last-child {
+                    .cost {}
+                }
+            }
+            p {
+                a {}
+            }
+            .cart {
+                p {
+                    a {
+                    }
+                }
+            }
+            .help {
+                .h_t {
+                    p {
+                        a {}
+                    }
+                }
+                p {
+                    span {}
+                }
+
+            }
+            .box {
+                .bar {}
+            }
+            .rev {
+                p {}
+                p:last-child {
+                    a {}
+                }
+            }
+        }
+    }
+}

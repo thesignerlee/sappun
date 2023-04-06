@@ -46,15 +46,32 @@ nav_acc[12].addEventListener('mouseout', function(){
     nav_acc_sub[0].style.display='none'
 })
 //6. 메뉴에 마우스 오버 시 서브 메뉴 보이기
-kr_lnb.addEventListener('mouseover', function(){
-    kr_lnb_open.style.display='block'
-})
-//7. 메뉴에 마우스 나갈 시 서브 메뉴 숨기기
-kr_lnb.addEventListener('mouseout', function(){
-    kr_lnb_open.style.display='none'
+let kr_boolean = true
+kr_lnb.addEventListener('click', function(){
+    if(kr_boolean){
+        kr_lnb_open.style.display='block'
+    }else{kr_lnb_open.style.display='none'}
+    kr_boolean =! kr_boolean
 })
 //8. 메뉴에 클릭 시 전체 메뉴 숨기기
+// right popup if 연습--------------------
+let popup_boolean = true
 popup.addEventListener('click', function(){
+    if(popup_boolean){
+        // console.log('보이기')
+        /* popup_boolean = false */
+        rightpop.style.transform = 'translateX(0)'
+        rightpop.style.transition = 'all 0.5s'
+    }
+    else{
+        // console.log('숨기기')
+        /* popup_boolean = true */
+        rightpop.style.transform = 'translateX(500px)'
+        rightpop.style.transition = 'all 0.5s'
+    }
+    popup_boolean =! popup_boolean
+})
+/* popup.addEventListener('click', function(){
     rightpop.style.transition = 'all 0.5s'
     rightpop.style.transform = 'translateX(0)'
 })
@@ -62,3 +79,4 @@ popup.addEventListener('mousedown', function(){
     rightpop.style.transition = 'all 0.5s'
     rightpop.style.transform = 'translateX(500px)'
 })
+ */
