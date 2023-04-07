@@ -1,87 +1,141 @@
-main {
-    .container {
-        img {}
-        h2 {}
-        .request {
+//변수
+$wh: #fff;
+$border:#ff7f50;
+$fontColor:#222;
+$fontColor2:#aaa;
+$bgColor:#eee;
+$bestColor:#ffe4c4;
+$orderColor:#000080;
+$order_bar:#ff69b4;
+//전체 너비 1200px
+//주문영역 너비 380px
+//레이아웃 구분 배경색 적용하기
+//container의 너비값은 calc 계산법 이용 380을 뺀 나머지 정리하기
+
+main {width:1200px; margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .container { width: calc(100% - 380px); background: aqua;
+        > img {width:100%;}
+        > h2 {margin: 70px; font-weight: 800; text-align: center;}
+        .ai {display:grid; margin-bottom:70px;
+            grid-template-columns: repeat(3,1fr);
             .menu {
                 .m_t {
-                    p {
+                    p {height: 185px; overflow: hidden; margin: 10px;
                         a {
-                            img {}
+                            img {width:100%;}
                         }
                     }
                     h1 {}
-                    h2 {
-                        span {}
+                    h2 {font-weight: 800;
                     }
                 }
             }
         }
-    }
-    .info {
-        .but {
-            button {}
-            button:nth-child(1) {}
-            button:nth-child(2) {}
-            button:nth-child(3) {}
+        .category {
+            .info { 
+                .but { margin: 0 5px; margin-bottom: 20px; border-bottom: 1px solid $fontColor2; padding:15px 5px;
+                    button {margin-left: 30px;}
+                    button:first-child {margin-left: 0;}
+                    .active:first-child::after {content:''; width:120%; height: 4px; display: block; background: #ff69b4; position: relative; left:-7px; top:15px;}
+                    .active:nth-child(2)::after {content:''; width:120%; height: 4px; display: block; background: #ff69b4; position: relative; left:-10px; top:15px;}
+                    .active:nth-child(3)::after {content:''; width:120%; height: 4px; display: block; background: #ff69b4; position: relative; left:-13px; top:15px;}
+                }
+                img {width:90%; margin:20px 40px;
+                    
+                }
+            }
         }
-        img {}
     }
     aside {
         .top {
-            p {
+            p {margin:10px 0;
                 a {
                     img {}
                 }
             }
-            h1 {}
-            dl {
-                dt {}
-                dd {}
+            h1 {margin:15px 0; font-size: 1.2rem; font-weight: 800;}
+            dl {display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                justify-content: space-between;
+                dt {margin: 12px 0;}
+                dd {text-align: end; margin: 12px 0;}
+                dd:nth-child(2) {color:$fontColor2;}
             }
         }
         .optc {
-            .opt {
-                h2 {}
-                #select {
+            .opt {display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: repeat(1, 1fr);
+                justify-content: space-between;
+                
+                h2 {display: inline;}
+                #color {
+                    height:50px; padding-left: 10px; border: #ddd 1px solid;
                     option {}
                 }
+                #goob {
+                    height:50px; padding-left: 10px; border: #ddd 1px solid;
+                    option {}
+                }
+                #none {
+                    height:50px; padding-left: 10px; border: #ddd 1px solid;
+                    option {}
+                }
+                select {margin-bottom: 20px;}
+            }
+            .opt:last-child{border-bottom: 1px solid $fontColor;
             }
         }
         .order {
             .price {
-                p {}
+                display:flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                p {color: $border; font-size: 1.5rem; margin: 15px 0;}
                 p:last-child {
                     .cost {}
                 }
             }
-            p {
-                a {}
+            > p { text-align: center;
+                a {color: $wh; padding: 20px; background: $border; margin: 0 0 10px 0; display: block;}
             }
             .cart {
-                p {
-                    a {
+                display:flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                margin: 10px 0;
+                p {width:47%; text-align: center;
+                    a { border: 1px solid $border; margin: 0; padding: 10px; display: block;}
+                }
+                p:first-child a {color: $border;}
+            }
+            .help { border: 1px dashed $fontColor2; padding: 20px;
+                .h_t {                display:flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    margin-bottom:10px;
+                    p {color: $fontColor2; font-size: 0.8rem;
+                        a {font-size: 1rem;}
                     }
                 }
-            }
-            .help {
-                .h_t {
-                    p {
-                        a {}
-                    }
+                p {font-size: 1.1rem;
+                    span {font-size: 1.1rem; font-weight: 800;}
                 }
-                p {
-                    span {}
-                }
-
+                p:last-child {}
             }
-            .box {
-                .bar {}
+            .box { margin-top: 10px; background: $fontColor2; height: 10px;
+                .bar {background: $order_bar; width:70%; height:10px; display: block;}
             }
-            .rev {
-                p {}
+            .rev {margin-top: 20px;              display:flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                p {font-weight: 800;}
                 p:last-child {
-                    a {}
+                    a {border: 1px solid $fontColor; padding: 5px; display: block;}
                 }
             }
         }

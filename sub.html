@@ -7,48 +7,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레프리 스트랩 뮬 슬리퍼 | 사뿐 SAPPUN</title>
-    <link rel="stylesheet" href="./styles/sub.scss">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/sub.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <main>
         <div class="container">
             <img src="./images/0020010016862.jpg" alt="">
             <h2>사뿐 AI 추천 상품</h2>
-            <div class="request">
+            <div class="ai">
                 <div class="menu">
                     <div class="m_t">
-                        <p><a href="#"><img src="0020010015263.jpg" alt=""></a></p>
+                        <p><a href="#"><img src="./images/0020010015263.jpg" alt=""></a></p>
                         <h1>[SAPPUN BASIC] 라일링스트랩샌들힐(7cm)</h1>
-                        <h2><span>35,900</span>원</h2>
+                        <h2>35,900원</h2>
                     </div>
                 </div>
                 <div class="menu">
                     <div class="m_t">
                         <p><a href="#"><img src="./images/0020010016403.jpg" alt=""></a></p>
                         <h1>[SAPPUN BASIC] 라일링스트랩샌들힐(7cm)</h1>
-                        <h2><span>35,900</span>원</h2>
+                        <h2>35,900원</h2>
                     </div>
                 </div>
                 <div class="menu">
                     <div class="m_t">
                         <p><a href="#"><img src="./images/0020010016862.jpg" alt=""></a></p>
                         <h1>[SAPPUN BASIC] 라일링스트랩샌들힐(7cm)</h1>
-                        <h2><span>35,900</span>원</h2>
+                        <h2>35,900원</h2>
                     </div>
-            </div>
-            <div class="info">
-                <div class="but">
-                    <button type="button">상품정보</button>
-                    <button type="button">쇼핑가이드</button>
-                    <button type="button">상품리뷰(1,135)</button>
-                    <button type="button">상품문의(242)</button>
-                    <button type="button">추천 아이템</button>
                 </div>
-                <img src="./images/0020010016872.jpg" alt="">
             </div>
+        <div class="category">
             <div class="info">
                 <div class="but">
-                    <button type="button">상품정보</button>
+                    <button type="button" class="active">상품정보</button>
                     <button type="button">쇼핑가이드</button>
                     <button type="button">상품리뷰(1,135)</button>
                     <button type="button">상품문의(242)</button>
@@ -59,14 +53,25 @@
             <div class="info">
                 <div class="but">
                     <button type="button">상품정보</button>
-                    <button type="button">쇼핑가이드</button>
+                    <button type="button" class="active">쇼핑가이드</button>
                     <button type="button">상품리뷰(1,135)</button>
                     <button type="button">상품문의(242)</button>
                     <button type="button">추천 아이템</button>
                 </div>
-                <img src="0020010016872.jpg" alt="">
+                <img src="./images/0020010016862.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="but">
+                    <button type="button">상품정보</button>
+                    <button type="button">쇼핑가이드</button>
+                    <button type="button" class="active">상품리뷰(1,135)</button>
+                    <button type="button">상품문의(242)</button>
+                    <button type="button">추천 아이템</button>
+                </div>
+                <img src="./images/0020010016872.jpg" alt="">
             </div>
         </div>
+    </div>
         <aside>
             <div class="top">
                 <p><a href="#"><img src="./images/detail_icon_wish.png" alt=""></a></p>
@@ -83,7 +88,7 @@
             <div class="optc">
                 <div class="opt">
                     <h2>색상</h2>
-                    <select name="color" id="select">
+                    <select name="color" id="color">
                         <option value="none">--옵션 선택--</option>
                         <option value="black">블랙(black)</option>
                         <option value="red">빨강(red)</option>
@@ -92,7 +97,7 @@
                 </div>
                 <div class="opt">
                     <h2>굽높이</h2>
-                    <select name="goob" id="select">
+                    <select name="goob" id="goob">
                         <option value="none">--옵션 선택--</option>
                         <option value="cm">1.5cm</option>
                         <option value="cm">4cm</option>
@@ -100,7 +105,7 @@
                 </div>
                 <div class="opt">
                     <h2>사이즈</h2>
-                    <select name="none" id="select">
+                    <select name="none" id="none">
                         <option value="option">--옵션 선택--</option>
                         <option value="mm">225mm</option>
                         <option value="mm">230mm</option>
@@ -116,7 +121,7 @@
             <div class="order">
                 <div class="price">
                     <p>총 상품 금액</p>
-                    <p><span class="cost"></span>원</p>
+                    <p><span class="cost"></span>0원</p>
                 </div>
                 <p><a href="#">BUY IT NOW</a></p>
                 <div class="cart">

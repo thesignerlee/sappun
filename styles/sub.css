@@ -1,0 +1,223 @@
+main {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+main .container {
+  width: calc(100% - 380px);
+  background: aqua;
+}
+main .container > img {
+  width: 100%;
+}
+main .container > h2 {
+  margin: 70px;
+  font-weight: 800;
+  text-align: center;
+}
+main .container .ai {
+  display: grid;
+  margin-bottom: 70px;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .container .ai .menu .m_t p {
+  height: 185px;
+  overflow: hidden;
+  margin: 10px;
+}
+main .container .ai .menu .m_t p a img {
+  width: 100%;
+}
+main .container .ai .menu .m_t h2 {
+  font-weight: 800;
+}
+main .container .category .info .but {
+  margin: 0 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #aaa;
+  padding: 15px 5px;
+}
+main .container .category .info .but button {
+  margin-left: 30px;
+}
+main .container .category .info .but button:first-child {
+  margin-left: 0;
+}
+main .container .category .info .but .active:first-child::after {
+  content: "";
+  width: 120%;
+  height: 4px;
+  display: block;
+  background: #ff69b4;
+  position: relative;
+  left: -7px;
+  top: 15px;
+}
+main .container .category .info .but .active:nth-child(2)::after {
+  content: "";
+  width: 120%;
+  height: 4px;
+  display: block;
+  background: #ff69b4;
+  position: relative;
+  left: -10px;
+  top: 15px;
+}
+main .container .category .info .but .active:nth-child(3)::after {
+  content: "";
+  width: 120%;
+  height: 4px;
+  display: block;
+  background: #ff69b4;
+  position: relative;
+  left: -13px;
+  top: 15px;
+}
+main .container .category .info img {
+  width: 90%;
+  margin: 20px 40px;
+}
+main aside .top p {
+  margin: 10px 0;
+}
+main aside .top h1 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+main aside .top dl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: space-between;
+}
+main aside .top dl dt {
+  margin: 12px 0;
+}
+main aside .top dl dd {
+  text-align: end;
+  margin: 12px 0;
+}
+main aside .top dl dd:nth-child(2) {
+  color: #aaa;
+}
+main aside .optc .opt {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: space-between;
+}
+main aside .optc .opt h2 {
+  display: inline;
+}
+main aside .optc .opt #color {
+  height: 50px;
+  padding-left: 10px;
+  border: #ddd 1px solid;
+}
+main aside .optc .opt #goob {
+  height: 50px;
+  padding-left: 10px;
+  border: #ddd 1px solid;
+}
+main aside .optc .opt #none {
+  height: 50px;
+  padding-left: 10px;
+  border: #ddd 1px solid;
+}
+main aside .optc .opt select {
+  margin-bottom: 20px;
+}
+main aside .optc .opt:last-child {
+  border-bottom: 1px solid #222;
+}
+main aside .order .price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main aside .order .price p {
+  color: #ff7f50;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+main aside .order > p {
+  text-align: center;
+}
+main aside .order > p a {
+  color: #fff;
+  padding: 20px;
+  background: #ff7f50;
+  margin: 0 0 10px 0;
+  display: block;
+}
+main aside .order .cart {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+main aside .order .cart p {
+  width: 47%;
+  text-align: center;
+}
+main aside .order .cart p a {
+  border: 1px solid #ff7f50;
+  margin: 0;
+  padding: 10px;
+  display: block;
+}
+main aside .order .cart p:first-child a {
+  color: #ff7f50;
+}
+main aside .order .help {
+  border: 1px dashed #aaa;
+  padding: 20px;
+}
+main aside .order .help .h_t {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+main aside .order .help .h_t p {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+main aside .order .help .h_t p a {
+  font-size: 1rem;
+}
+main aside .order .help p {
+  font-size: 1.1rem;
+}
+main aside .order .help p span {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+main aside .order .box {
+  margin-top: 10px;
+  background: #aaa;
+  height: 10px;
+}
+main aside .order .box .bar {
+  background: #ff69b4;
+  width: 70%;
+  height: 10px;
+  display: block;
+}
+main aside .order .rev {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main aside .order .rev p {
+  font-weight: 800;
+}
+main aside .order .rev p:last-child a {
+  border: 1px solid #222;
+  padding: 5px;
+  display: block;
+}/*# sourceMappingURL=sub.css.map */
