@@ -79,6 +79,10 @@ main .container .category .info img {
   width: 90%;
   margin: 20px 40px;
 }
+main aside {
+  position: fixed;
+  right: 5%;
+}
 main aside .top p {
   margin: 10px 0;
 }

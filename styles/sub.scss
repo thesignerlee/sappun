@@ -49,7 +49,7 @@ main {width:1200px; margin: 0 auto;
             }
         }
     }
-    aside {
+    aside {position: fixed; right: 5%;
         .top {
             p {margin:10px 0;
                 a {
